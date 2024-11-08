@@ -1,7 +1,7 @@
 # Proyecto de Diseño Web en Cuadrícula
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/60f68345-5e5e-4d53-9fae-2b0b68c10866" width="500" alt="Primera imagen">
+    <img src="https://github.com/user-attachments/assets/29d90922-6516-4707-b88e-8a2336c5660b" width="500" alt="Primera imagen">
 </div>
 
 Este proyecto utiliza **HTML**, **CSS** y **JavaScript** para crear una página web estructurada en un diseño de cuadrícula. La página está organizada en varias secciones, como encabezado, barras laterales, contenido principal y pie de página, con colores personalizados y un diseño adaptable.
