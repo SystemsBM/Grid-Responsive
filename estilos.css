@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 80px auto 1fr auto 50px;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+        "encabezado    encabezado    encabezado"
+        "lado-izquierdo banner       lado-derecho"
+        "lado-izquierdo principal    lado-derecho"
+        "lado-izquierdo contenido-bajo lado-derecho"
+        "pie           pie           pie";
+    grid-gap: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    background-color: #2E86C1; 
+    padding: 20px;
+    text-align: center;
+}
+
+.lado-izquierdo {
+    grid-area: lado-izquierdo;
+    background-color: #A569BD; 
+    padding: 20px;
+}
+
+.principal {
+    grid-area: principal;
+    background-color: #58D68D; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: #F5B041; 
+    padding: 20px;
+    text-align: center;
+}
+
+.lado-derecho {
+    grid-area: lado-derecho;
+    background-color: #5DADE2; 
+    padding: 20px;
+}
+
+.contenido-bajo {
+    grid-area: contenido-bajo;
+    background-color: #F7DC6F; 
+    padding: 20px;
+}
+
+.pie {
+    grid-area: pie;
+    background-color: #E74C3C; 
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 678px) {
+    .contenedor {
+        grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "encabezado"
+            "banner"
+            "lado-izquierdo"
+            "principal"
+            "lado-derecho"
+            "contenido-bajo"
+            "pie";
+    }
+}
